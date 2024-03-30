@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Video Processing</title>
+</head>
+<body>
+    <h1>Flask Video Processing</h1>
+    <img id="video_feed" src="{{ url_for('video_feed') }}" style="width: 100%;">
+
+    <!-- Remove the action attributes from the forms -->
+    <form method="get">
+        <button type="submit" name="action" value="start">Start</button>
+    </form>
+
+    <form method="get">
+        <button type="submit" name="action" value="stop">Stop</button>
+    </form>
+</body>
+</html>
